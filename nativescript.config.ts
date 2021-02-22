@@ -1,10 +1,10 @@
-import { NativeScriptConfig } from '@nativescript/core';
+import { NativeScriptConfig } from "@nativescript/core";
 
 export default {
-  id: 'nsmbug',
-  appResourcesPath: 'App_Resources',
+  id: "se.bjurr.nsmbug",
+  appResourcesPath: "App_Resources",
   android: {
-    v8Flags: '--expose_gc',
-    markingMode: 'none'
+    v8Flags: "--expose_gc",
+    markingMode: "none"
   }
 } as NativeScriptConfig;
