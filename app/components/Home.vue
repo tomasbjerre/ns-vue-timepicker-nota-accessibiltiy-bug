@@ -1,46 +1,32 @@
 <template>
   <Page>
     <StackLayout>
-      <Button text="button1"></Button>
-      <Button text="button2" @tap="onTapButton()"></Button>
-      <Button text="button3"></Button>
+      <Label
+        text="the text"
+        height="50"
+        :accessible="true"
+        accessibilityLabel="hej 1"
+        accessibilityValue="hej 2"
+        accessibilityHint="hej 3"
+        accessibilityIdentifier="hej 4"
+        :accessibilityHidden="false"
+        accessibilityRole="adjustable"
+        accessibilityState="selected"
+        a11y-state="polite"
+      ></Label>
+      <ListPicker
+        height="200"
+        :items="[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        :accessible="true"
+        accessibilityLabel="listpicker hej 1"
+        accessibilityValue="istpicker hej 2"
+        accessibilityHint="istpicker hej 3"
+        accessibilityIdentifier="istpicker hej 4"
+        :accessibilityHidden="false"
+        accessibilityRole="adjustable"
+        accessibilityState="selected"
+        a11y-state="polite"
+      ></ListPicker>
     </StackLayout>
   </Page>
 </template>
-
-<script>
-export default {
-  computed: {
-    message() {
-      return "Blank {N}-Vue app";
-    }
-  },
-  methods: {
-    onTapButton: function() {
-      confirm({
-        title: "the title",
-        message: "the message",
-        okButtonText: "It is ok",
-        cancelButtonText: "No not ok"
-      }).then(result => {
-        console.log("result", result);
-      });
-    }
-  }
-};
-</script>
-
-<style scoped lang="scss">
-@import "~@nativescript/theme/scss/variables/blue";
-
-// Custom styles
-.fas {
-  @include colorize($color: accent);
-}
-
-.info {
-  font-size: 20;
-  horizontal-align: center;
-  vertical-align: center;
-}
-</style>

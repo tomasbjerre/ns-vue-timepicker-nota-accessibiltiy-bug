@@ -1,4 +1,4 @@
-See files in workspace:
+bug report
 
- * android.mp4
- * ios.mp4
+https://youtu.be/90hF7IgkuN0
+https://www.youtube.com/watch?v=yFx247FYH9c
